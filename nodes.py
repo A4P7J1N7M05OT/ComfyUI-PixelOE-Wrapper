@@ -3,7 +3,6 @@ import os
 import cv2
 import numpy as np
 import torch
-import torchvision.transforms as transforms
 
 from .PixelOE.pixeloe import pixelize
 
@@ -84,15 +83,9 @@ class PixelOE:
 
     def process(self, img, mode, target_size, patch_size, thickness, color_matching, contrast, saturation, colors, no_upscale, no_downscale):
 
-        # Convert image from PyTorch tensor to NumPy array
         img = img.squeeze().numpy()
-
-        # Convert image from float32 to uint8
         img = (img * 255).astype(np.uint8)
-
-        # Convert image from RGB to BGR
         img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-        print(img.shape)
 
         img_pix = pixelize(img, mode, target_size, patch_size, thickness, color_matching, contrast, saturation, colors, no_upscale, no_downscale)
 

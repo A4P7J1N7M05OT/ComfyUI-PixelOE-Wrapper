@@ -19,30 +19,30 @@ class PixelOE:
         return {
             "required": {
                 "img": ("IMAGE",),
-                "mode": (["contrast"],),
+                "mode": (["contrast", "center", "k-centroid", "bicubic", "nearest"],),
                 "target_size": ("INT", {
-                    "default": 128,
+                    "default": 256,
                     "min": 0,
                     "max": 4096,
                     "step": 1,
                     "display": "number"
                 }),
                 "patch_size": ("INT", {
-                    "default": 16,
+                    "default": 6,
                     "min": 0,
                     "max": 4096,
                     "step": 1,
                     "display": "number"
                 }),
                 "thickness": ("INT", {
-                    "default": 2,
+                    "default": 1,
                     "min": 0,
                     "max": 4096,
                     "step": 1,
                     "display": "number"
                 }),
                 "color_matching": ("BOOLEAN", {
-                    "default": True
+                    "default": False
                 }),
                 "contrast": ("FLOAT", {
                     "default": 1.0,
@@ -61,7 +61,7 @@ class PixelOE:
                     "display": "number"
                 }),
                 "colors": ("INT", {
-                    "default": 0,
+                    "default": None,
                     "min": 0,
                     "max": 4096,
                     "step": 1,

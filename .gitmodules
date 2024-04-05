@@ -1,0 +1,3 @@
+[submodule "PixelOE"]
+	path = PixelOE
+	url = https://github.com/KohakuBlueleaf/PixelOE.git

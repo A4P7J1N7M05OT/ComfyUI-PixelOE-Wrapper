@@ -60,9 +60,9 @@ class PixelOE:
                     "display": "number"
                 }),
                 "colors": ("INT", {
-                    "default": None,
-                    "min": 0,
-                    "max": 4096,
+                    "default": 256,
+                    "min": 1,
+                    "max": 256,
                     "step": 1,
                     "display": "number"
                 }),

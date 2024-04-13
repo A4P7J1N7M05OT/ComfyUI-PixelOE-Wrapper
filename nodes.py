@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import torch
 
-from .PixelOE.pixeloe import pixelize
+from .PixelOE.pixeloe.pixelize import pixelize
 
 script_directory = os.path.dirname(os.path.abspath(__file__))
 

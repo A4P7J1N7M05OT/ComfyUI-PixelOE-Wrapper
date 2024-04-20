@@ -79,7 +79,7 @@ class PixelOE:
     RETURN_NAMES = ("image",)
     FUNCTION = "process"
 
-    CATEGORY = "Pixelize"
+    CATEGORY = "image/pixelize"
 
     def process(self, img, mode, target_size, patch_size, thickness, color_matching, contrast, saturation, colors, no_upscale, no_downscale):
 

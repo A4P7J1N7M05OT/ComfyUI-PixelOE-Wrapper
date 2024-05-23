@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-pixeloe"
+description = "A barebones ComfyUI wrapper for [a/PixelOE](https://github.com/KohakuBlueleaf/PixelOE).\nI cannot promise any support, if there is someone who wants to make a proper node, please do."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["torch", "opencv-python", "numpy"]
+
+[project.urls]
+Repository = "https://github.com/A4P7J1N7M05OT/ComfyUI-PixelOE"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-PixelOE"
+Icon = ""

@@ -101,9 +101,9 @@ class PixelOE:
         img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
         img_pix = pixelize(
-            img, mode, target_size, patch_size, pixel_size, thickness,
-            color_matching, contrast, saturation, colors, color_quant_method,
-            colors_with_weight, no_upscale, no_downscale
+            img=img, mode=mode, target_size=target_size, patch_size=patch_size, pixel_size=pixel_size, thickness=thickness,
+            color_matching=color_matching, contrast=contrast, saturation=saturation, colors=colors, color_quant_method=color_quant_method,
+            colors_with_weight=colors_with_weight, no_upscale=no_upscale, no_downscale=no_downscale,
         )
 
         img_pix = cv2.cvtColor(img_pix, cv2.COLOR_BGR2RGB)
